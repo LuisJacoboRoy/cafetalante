@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <section>
+    <div class="container">
+       <!-- See https://github.com/googlemaps/extended-component-library for docs and updates. -->
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js"></script>
+<gmpx-api-loader key="YOUR_API_KEY_HERE" solution-channel="GMP_GCC_placebuildingblocks_v1"></gmpx-api-loader>
+<gmpx-place-data-provider place="ChIJ_YISFPUjx4URH2JlKnRHxyk">
+  <div slot="initial-loading">
+    loading...
+  </div>
+  <div class="container">
+    <gmpx-place-rating></gmpx-place-rating>
+    <gmpx-place-field-boolean field="isOpen()">
+      <span slot="true">
+        Open now
+      </span>
+      <span slot="false">
+        Closed now
+      </span>
+    </gmpx-place-field-boolean>
+    <gmpx-place-opening-hours></gmpx-place-opening-hours>
+    <gmpx-place-directions-button variant="filled">
+      Nuestra Dirección
+    </gmpx-place-directions-button>
+    <gmpx-place-photo-gallery class="gallery" max-tiles="9"></gmpx-place-photo-gallery>
+    <gmpx-place-reviews max-reviews="3"></gmpx-place-reviews>
+  </div>
+</gmpx-place-data-provider>
+
+    </div>
+  </section>
+ 
+
+
+</body>
+</html>
