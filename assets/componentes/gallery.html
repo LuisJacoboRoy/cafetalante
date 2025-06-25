@@ -1,0 +1,24 @@
+<div class="container">
+  <h1 class="text-center mb-4">GaleriaSlide</h1>
+  <div class="gallery-wrap">
+    <div class="item item-1" data-img="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"></div>
+    <div class="item item-2" data-img="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80"></div>
+    <div class="item item-3" data-img="https://images.unsplash.com/photo-1519985176271-adb1088fa94c?auto=format&fit=crop&w=800&q=80"></div>
+    <div class="item item-4" data-img="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80"></div>
+    <div class="item item-5" data-img="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80"></div>
+  </div>
+  <!-- Modal Bootstrap para vista de imagen -->
+  <div class="modal fade" id="imgModal" tabindex="-1" aria-labelledby="imgModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imgModalLabel">Vista de imagen</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="modalImage" src="" alt="Imagen" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
